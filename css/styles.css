@@ -1,16 +1,55 @@
-* {
-  box-sizing: border-box;
-}
+
 body {
   max-width: 320px;
   margin: 0 auto;
+  border: 1px solid black;
 }
+
 .container {
   display: flex;
   flex-direction: column;
-  margin: 10px;
 }
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  padding-right: 16px;
+  align-items: center;
+}
+.intro {
+  padding: 16px;
+}
+.intro-header>h1 {
+  font-family: 'Playfair Display';
+  color: #1A2236;
+  font-weight: 400;
+  width: 220px;
+  height: 100px;
+  font-size: 40px;
+  line-height: 100%;
+}
+.intro-header>p {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  width: 288px;
+  height: 126px;
+  line-height: 21px;
+  letter-spacing: -0.01cm;
+}
+.button-contact {
+  box-sizing: border-box;
+  width: 288px;
+  height: 50px;
+  background: #1A2236 ;
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.intro-image-art {
+  width: 320px;
+  height: 160px;
 }
