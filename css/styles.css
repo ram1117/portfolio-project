@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
