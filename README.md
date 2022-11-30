@@ -29,9 +29,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
-**[Portfolio]** is a personal Portfolio project for job search and collobarations
+**Portfolio** is a personal Portfolio project for job search and collobarations
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,8 +43,8 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 ### Key Features <a name="key-features"></a>
 
 
-- **[Mobile first approach]**
-- **[Geometrical design shapes and elements]**
+- **Mobile first approach**
+- **Solid design**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -53,7 +53,6 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -93,8 +92,8 @@ No installation required for this project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[List of projects]**
-- [ ] **[browser version of webpage for larger screens]**
+- [ ] **List of projects**
+- [ ] **browser version of webpage for larger screens**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,13 +114,13 @@ Feel free to check the [https://github.com/ram1117/portfolio-project/issues]
 
 ## ❓ FAQ <a name="faq"></a>
 
-- **[Is there a browser version available?]**
+- **Is there a browser version available?**
 
-  - [This project is developed using mobile-first approach, browser version of the webpage will be available soon]
+  - This project is developed using mobile-first approach, browser version of the webpage will be available soon
 
 - **[Can the project be re-used?]**
 
-  - [It's MIT licensed. Please read licensing agreement below]
+  - It's MIT licensed. Please read licensing agreement below
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
