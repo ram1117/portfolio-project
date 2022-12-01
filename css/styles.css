@@ -14,12 +14,12 @@ body {
   height: 15vh;
   align-items: center;
   background: #fff url("../res-icons/image_geometry_1.svg") 0 0 no-repeat;
+  background-size: contain;
 }
 
 .intro {
-  height: 90vh;
+  min-height: 100vh;
   background: #fff url("../res-icons/image_geometry_2.svg") 0 100% no-repeat;
-  background-size: contain;
 }
 
 .section-header {
@@ -91,12 +91,14 @@ body {
   font-size: 1.3em;
 }
 
-.tech-item-container {
-  display: flex;
+.tech-item-list {
+  padding-left: 0;
+  margin-left: 0;
   margin-bottom: 5vh;
 }
 
 .tech-item {
+  display: inline;
   font-family: 'Poppins', sans-serif;
   padding: 1vh 2vh;
   margin-right: 2vw;
@@ -148,10 +150,14 @@ body {
   font-weight: 800;
 }
 
-.skill-item {
-  position: relative;
+.skill-list {
+  margin: 1vw;
+  padding: 1vw;
+}
+
+.skill-item {  
+  
   font-weight: 600;
   font-size: 1.3em;
   line-height: 1.5em;
-  left: -5vw;
 }
