@@ -1,5 +1,5 @@
 body {
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -19,7 +19,7 @@ body {
 .intro {
   padding: 16px;
   height: 110vh;
-  background: #fff url("../portfolio-template-5/image_geometry_2.svg") 0 400px no-repeat ;
+  background: #fff url("../portfolio-template-5/image_geometry_2.svg") 0 400px no-repeat;
   background-size: contain;
 }
 
@@ -57,4 +57,3 @@ body {
   margin-bottom: 30px;
   align-self: center;
 }
-
