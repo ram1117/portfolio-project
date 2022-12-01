@@ -1,6 +1,5 @@
 body {
-  max-width: 320px;
-  margin: 0 auto;
+   margin: 0 auto;
 }
 
 .main-container {
@@ -20,7 +19,8 @@ body {
 .intro {
   padding: 16px;
   height: 110vh;
-  background: #fff url("../portfolio-template-5/image_geometry_2.svg") 0 450px no-repeat;
+  background: #fff url("../portfolio-template-5/image_geometry_2.svg") 0 400px no-repeat ;
+  background-size: contain;
 }
 
 .intro-header > h1 {
@@ -58,7 +58,3 @@ body {
   align-self: center;
 }
 
-.intro-image-art {
-  width: 320px;
-  height: 160px;
-}
