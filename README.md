@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="mreadme/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="readme/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -42,14 +42,13 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 
 ### Key Features <a name="key-features"></a>
 
-
 - **Mobile first approach**
 - **Solid design**
+- **List of previous projects**
+- **Technical skillset**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -92,7 +91,6 @@ No installation required for this project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **List of projects**
 - [ ] **browser version of webpage for larger screens**
 
 
