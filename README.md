@@ -46,6 +46,8 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 - **Solid design**
 - **List of previous projects**
 - **Technical skillset**
+- **contact form**
+- **social media links**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -99,6 +101,17 @@ No installation required for this project
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+I owe immense thanks to my team, for their contribution to this project
+
+👤 **Hana Sabih**
+
+- GitHub: [https://github.com/HanaSabih]
+
+👤 **Henry Ikemefuna Ugwu **
+
+- GitHub: [https://github.com/henry-dura]
+
 
 Contributions, issues, and feature requests are welcome!
 
