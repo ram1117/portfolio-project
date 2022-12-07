@@ -14,7 +14,11 @@ body {
   align-items: center;
   background: #fff url("../res-icons/image_geometry_1.svg") 0 0 no-repeat;
   background-size: contain;
-  padding-right: 5vw;
+  padding-right: 5vh;
+}
+
+.nav-list {
+  display: none;
 }
 
 .intro-section {
@@ -207,7 +211,7 @@ body {
   text-decoration: none;
 }
 
-.resume-link > div {
+.resume-link>div {
   color: #98dede;
   padding: 5vw;
   width: 60%;
@@ -226,6 +230,40 @@ body {
   justify-content: space-around;
 }
 
-.link-container > a {
+.link-container>a {
   height: 60%;
+}
+
+@media screen and (min-device-width:768px) {
+
+  /* styling for navigation bar elements -ram */
+  .nav-header {
+    height: 10vh;
+    display: inline;
+    background: #fff;
+  }
+
+  .nav-list {
+    margin: 0 auto;
+    padding-top: 3vh;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  .nav-list-item>a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    color: #1a2236;
+  }
+
+  /* to do - add javascript logic to enable/disable toggle icon -ram*/
+  .toggle-menu-icon {
+    display: none;
+  }
 }
