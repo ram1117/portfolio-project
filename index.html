@@ -199,21 +199,36 @@
     </section>
     <!-- Contacts section -->
     <section class="contact-me-section" id="contact-me-section">
-      <header class="contact-header">
-        <h2 class="section-header">Get Started</h2>
-        <p class="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-      </header>
-      <!-- visitor cotact form -->
-      <form class="visitor-form" action="https://formspree.io/f/mvoyeabj" method="post">
-        <input class="form-item" type="text" name="name" placeholder="Your name" required maxlength="30" />
-        <input class="form-item" type="email" name="email" placeholder="Your email" required />
-        <textarea class="form-item form-textarea" name="message" rows="5" placeholder="Enter your message here..."
-          required maxlength="300"></textarea>
-        <button class="button-generic" type="submit">Start collaboration</button>
-      </form>
+      <div class="contact-container">
+        <header class="contact-header">
+          <h2 class="section-header">Get Started</h2>
+          <p class="section-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </header>
+        <!-- visitor cotact form -->
+        <form class="visitor-form" action="https://formspree.io/f/mvoyeabj" method="post">
+          <div class="form-item float-left">
+            <label for="form-name">Your name</label>
+            <input class="form-item-input form-item-name" id="form-name" type="text" name="name" placeholder="Your name" required
+              maxlength="30" />
+          </div>
+          <div class="form-item float-right">
+            <label for="form-email">Your email</label>
+            <input class="form-item-input form-item-email" id="form-email" type="email" name="email" placeholder="Your email"
+              required />
+          </div>
+          <div class="form-item right">
+            <label for="form-message">Message</label>
+            <textarea class="form-item-input form-textarea" id="form-message" name="message" rows="5" placeholder="Enter your message here..."
+            required maxlength="300"></textarea>
+          </div>
+          
+          <button class="button-generic" type="submit">Start collaboration</button>
+        </form>
+      </div>
+
     </section>
     <footer class="social-links">
       <a class="resume-link" href="#">

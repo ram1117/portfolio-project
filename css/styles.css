@@ -65,7 +65,6 @@ body {
   color: #1a2236;
   cursor: pointer;
 }
-
 .button-generic:active {
   border: 3px solid #1a2236;
 }
@@ -131,6 +130,7 @@ body {
 .button-aboutme {
   background: #1a2236 url("../res-icons/ic_download.svg") 85% 55% no-repeat;
 }
+
 .skillset {
   padding: 5vh 15vw;
   margin-bottom: 3vh;
@@ -181,18 +181,23 @@ body {
 .visitor-form {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
 
-.form-item {
+.form-item>label{
+  display: none;
+}
+
+.form-item-input{
   background: #fff;
+  width: 90%;
   border: solid 1px #dfdfe0;
   border-radius: 4px;
-  padding: 4vw;
-  margin: 1vh;
+  padding: 5%;
+  margin-bottom: 2%;
   font-family: Poppins, sans-serif;
   font-size: 1.2em;
 }
-
 .form-textarea {
   margin-bottom: 5vh;
 }
@@ -305,11 +310,11 @@ body {
     border: 0;
   }
 
-  .button-generic:hover{
+  .button-generic:hover {
     border: solid 1px #1a2236;
   }
 
-  .button-generic:active{
+  .button-generic:active {
     border: solid 3px #1a2236;
   }
 
@@ -393,25 +398,63 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .about-me-section>header{
+
+  .about-me-section>header {
     padding: 15%;
     order: 2;
   }
 
-  .skillset-grid{
+  .skillset-grid {
     display: grid;
     order: 1;
     grid-template: 50% 50% / 50% 50%;
     padding: 10%;
   }
-  .skillset{
+
+  .skillset {
     padding: 0 10%;
     margin: 0;
     font-size: 0.6em;
   }
-  .skillset-image-art{
+
+  .skillset-image-art {
     background: url("../res-icons/image_dots_with_teal.svg") 100% 100% no-repeat;
 
   }
 
+  /* styling for about-me section -ram */
+
+  .contact-me-section{
+    background: url("../res-icons/image-geometry_6.svg") 0 0 no-repeat,url("../res-icons/image-geometry_7.svg") 100% 100% no-repeat;
+    background-size: 20%,20%;
+  }
+
+  .contact-container {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .visitor-form{
+    display: block;
+    font-size: 1em;
+  }
+  .form-item > label {
+    display: block;
+    font-size: 0.65em;
+    text-align: left;
+    font-family: 'Poppins',sans-serif;
+    color: #7d7c84;
+    }
+  .float-left{
+    width: 47%;
+    float: left;
+  }
+  .float-right{
+    width: 47%;
+    float: right;
+  }
+  
 }
