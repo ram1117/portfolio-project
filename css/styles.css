@@ -266,4 +266,48 @@ body {
   .toggle-menu-icon {
     display: none;
   }
+/* stlying intro section */
+.intro-section {
+  background: #fff;
+  padding: 0;
+  height: auto;
 }
+
+.intro-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.intro-container>header {
+  padding: 5%;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+}
+.image-art-right{
+  background: url("../res-icons/image-geometry_1.svg") 0 0 no-repeat;
+  background-size: cover;
+}
+.image-art-dot{
+  background: url("../res-icons/image_dots-1.svg") 100% 100% no-repeat;
+  background-size: contain;
+
+}
+
+.section-header {
+  font-size: 2.3em;
+}
+.section-content{
+  font-size: 1.2em;
+}
+
+.button-generic {
+  /* to do - better height value after styling all buttons */
+  height: 7vh;
+  width: 70%;
+  border: 0;
+}
+
+}
+
