@@ -17,10 +17,16 @@ body {
 }
 
 .intro-section {
-  min-height: 100vh;
-  background: #fff url("../res-icons/image_geometry_2.svg") 0 100% no-repeat;
-  background-size: contain;
   padding: 5vw;
+}
+
+.intro-container{
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+.image-art-intro{
+  background: #fff url("../res-icons/image_geometry_2.svg") 0 100% no-repeat;
+  background-size: cover;
 }
 
 .section-header {
@@ -262,16 +268,13 @@ body {
 
   /* stlying for intro section -ram*/
   .intro-section {
-    background: #fff;
     padding: 0;
-    height: auto;
   }
 
   .intro-container {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
 
   .intro-container>header {
@@ -280,7 +283,7 @@ body {
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
   }
 
-  .image-art-right {
+  .image-art-intro {
     background: url("../res-icons/image-geometry_1.svg") 0 0 no-repeat;
     background-size: cover;
   }
