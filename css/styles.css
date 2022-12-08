@@ -203,36 +203,39 @@ body {
 }
 
 .social-links {
+  display: flex;
+  flex-direction: column;
   background: #1a2236;
-  height: 15%;
+  padding: 5%;
 }
 
 .resume-link {
   text-decoration: none;
+  display: inline-flex;
+  width: 40%;
 }
 
 .resume-link>div {
   color: #98dede;
-  padding: 5vw;
-  width: 60%;
-  background: url("../res-icons/ic_link_teal.svg") 80% 50% no-repeat;
   font-family: Poppins, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.3em;
-  line-height: 1.7em;
+}
+.icon-placeholder{
+  width: 20%;
+  background: url("../res-icons/ic_link_teal.svg") 30% 10% no-repeat; 
 }
 
 .link-container {
-  height: 10vh;
+  margin-top: 5%;
+  height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.link-container>a {
-  height: 60%;
-}
+
 
 @media screen and (min-device-width:768px) {
 
@@ -439,7 +442,7 @@ body {
   }
   .visitor-form{
     display: block;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .form-item > label {
     display: block;
@@ -457,4 +460,15 @@ body {
     float: right;
   }
   
+  /* styling for footer with social media links -ram*/
+
+  .social-links{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .link-container{
+    width: 50%;
+    margin: 0;
+  }
 }
