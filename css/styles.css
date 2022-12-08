@@ -20,11 +20,12 @@ body {
   padding: 5vw;
 }
 
-.intro-container{
+.intro-container {
   display: grid;
   grid-template-rows: 2fr 2fr;
 }
-.image-art-intro{
+
+.image-art-intro {
   background: #fff url("../res-icons/image_geometry_2.svg") 0 100% no-repeat;
   background-size: cover;
 }
@@ -66,6 +67,7 @@ body {
   color: #1a2236;
   cursor: pointer;
 }
+
 .button-generic:active {
   border: 3px solid #1a2236;
 }
@@ -182,11 +184,11 @@ body {
   align-items: stretch;
 }
 
-.form-item>label{
+.form-item > label {
   display: none;
 }
 
-.form-item-input{
+.form-item-input {
   background: #fff;
   width: 90%;
   border: solid 1px #dfdfe0;
@@ -196,6 +198,7 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 1.2em;
 }
+
 .form-textarea {
   margin-bottom: 5vh;
 }
@@ -213,16 +216,17 @@ body {
   width: 40%;
 }
 
-.resume-link>div {
+.resume-link > div {
   color: #98dede;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.3em;
 }
-.icon-placeholder{
+
+.icon-placeholder {
   width: 20%;
-  background: url("../res-icons/ic_link_teal.svg") 30% 10% no-repeat; 
+  background: url("../res-icons/ic_link_teal.svg") 30% 10% no-repeat;
 }
 
 .link-container {
@@ -233,8 +237,7 @@ body {
   justify-content: space-between;
 }
 
-@media screen and (min-device-width:768px) {
-
+@media screen and (min-device-width: 768px) {
   /* styling for navigation bar elements -ram */
   .nav-header {
     height: 10vh;
@@ -252,21 +255,21 @@ body {
     align-items: center;
   }
 
-  .nav-list-item>a {
+  .nav-list-item > a {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 1.3em;
     line-height: 1.7em;
     color: #1a2236;
   }
 
-  /* to do - add javascript logic to enable/disable toggle icon -ram*/
+  /* to do - add javascript logic to enable/disable toggle icon -ram */
   .toggle-menu-icon {
     display: none;
   }
 
-  /* stlying for intro section -ram*/
+  /* stlying for intro section -ram */
   .intro-section {
     padding: 0;
   }
@@ -277,7 +280,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .intro-container>header {
+  .intro-container > header {
     padding: 5%;
     display: grid;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -322,7 +325,7 @@ body {
     gap: 0;
   }
 
-  .projects-section>h2 {
+  .projects-section > h2 {
     transform: rotate(-90deg);
     width: 50%;
     text-align: left;
@@ -395,7 +398,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-me-section>header {
+  .about-me-section > header {
     padding: 15%;
     order: 2;
   }
@@ -415,14 +418,13 @@ body {
 
   .skillset-image-art {
     background: url("../res-icons/image_dots_with_teal.svg") 100% 100% no-repeat;
-
   }
 
   /* styling for about-me section -ram */
 
-  .contact-me-section{
-    background: url("../res-icons/image-geometry_6.svg") 0 0 no-repeat,url("../res-icons/image-geometry_7.svg") 100% 100% no-repeat;
-    background-size: 20%,20%;
+  .contact-me-section {
+    background: url("../res-icons/image-geometry_6.svg") 0 0 no-repeat, url("../res-icons/image-geometry_7.svg") 100% 100% no-repeat;
+    background-size: 20%, 20%;
   }
 
   .contact-container {
@@ -433,37 +435,43 @@ body {
     align-items: stretch;
     text-align: center;
   }
-  .visitor-form{
+
+  .visitor-form {
     display: block;
     font-size: 0.8em;
   }
+
   .form-item > label {
     display: block;
     font-size: 0.8em;
     text-align: left;
-    font-family: 'Poppins',sans-serif;
+    font-family: Poppins, sans-serif;
     color: #7d7c84;
-    }
-  .float-left{
+  }
+
+  .float-left {
     width: 47%;
     float: left;
   }
-  .float-right{
+
+  .float-right {
     width: 47%;
     float: right;
   }
-  
-  /* styling for footer with social media links -ram*/
 
-  .social-links{
+  /* styling for footer with social media links -ram */
+
+  .social-links {
     margin: 0;
     display: block;
   }
-  .resume-link{
+
+  .resume-link {
     width: 30%;
     float: left;
   }
-  .link-container{
+
+  .link-container {
     margin: 0;
     float: right;
     width: 30%;
