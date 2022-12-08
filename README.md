@@ -43,11 +43,12 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 ### Key Features <a name="key-features"></a>
 
 - **Mobile first approach**
-- **Solid design**
+- **responsive web design**
 - **List of previous projects**
 - **Technical skillset**
 - **contact form**
 - **social media links**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -93,7 +94,7 @@ No installation required for this project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **browser version of webpage for larger screens**
+- [ ] **add functionalities for buttons and navigation**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,13 +103,13 @@ No installation required for this project
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-I owe immense thanks to my team, for their contribution to this project
+I owe my immense thanks to my team, for their contribution to this project
 
 👤 **Hana Sabih**
 
 - GitHub: [https://github.com/HanaSabih]
 
-👤 **Henry Ikemefuna Ugwu **
+👤 **Henry Ikemefuna Ugwu**
 
 - GitHub: [https://github.com/henry-dura]
 
@@ -125,9 +126,9 @@ Feel free to check the [https://github.com/ram1117/portfolio-project/issues]
 
 ## ❓ FAQ <a name="faq"></a>
 
-- **Is there a browser version available?**
+- **Is there a desktop browser version available?**
 
-  - This project is developed using mobile-first approach, browser version of the webpage will be available soon
+  - Yes, the desktop browser version of the page has been recently deployed
 
 - **[Can the project be re-used?]**
 
