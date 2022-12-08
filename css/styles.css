@@ -2,11 +2,6 @@ body {
   margin: 0 auto;
 }
 
-/* .main-container {
-  display: flex;
-  flex-direction: column;
-} */
-
 .nav-header {
   display: flex;
   justify-content: flex-end;
@@ -140,17 +135,14 @@ body {
 
 .skillset1 {
   background: #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100% no-repeat;
-  background-size: 40% 20%;
 }
 
 .skillset2 {
   background: #e2505c url("../res-icons/ic_framework.svg") 100% 100% no-repeat;
-  background-size: 40% 20%;
 }
 
 .skillset3 {
   background: #febf52 url("../res-icons/ic_skills.svg") 100% 100% no-repeat;
-  background-size: 40% 20%;
 }
 
 .skillset-header {
@@ -234,8 +226,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-
 
 @media screen and (min-device-width:768px) {
 
@@ -446,7 +436,7 @@ body {
   }
   .form-item > label {
     display: block;
-    font-size: 0.65em;
+    font-size: 0.8em;
     text-align: left;
     font-family: 'Poppins',sans-serif;
     color: #7d7c84;
@@ -463,12 +453,16 @@ body {
   /* styling for footer with social media links -ram*/
 
   .social-links{
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .link-container{
-    width: 50%;
     margin: 0;
+    display: block;
+  }
+  .resume-link{
+    width: 30%;
+    float: left;
+  }
+  .link-container{
+    margin: 0;
+    float: right;
+    width: 30%;
   }
 }
