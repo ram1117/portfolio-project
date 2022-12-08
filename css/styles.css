@@ -237,7 +237,7 @@ body {
   justify-content: space-between;
 }
 
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   /* styling for navigation bar elements -ram */
   .nav-header {
     height: 10vh;
@@ -302,11 +302,13 @@ body {
   }
 
   .section-content {
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
 
   .button-generic {
     width: 70%;
+    height: 5vh;
+    font-size: 1.5em;
     border: 0;
   }
 
@@ -319,6 +321,9 @@ body {
   }
 
   /* styling for projects section -ram */
+  .projects-section {
+    padding: 10vh 0;
+  }
 
   .projects-container {
     grid-template-columns: repeat(7, 1fr);
@@ -339,6 +344,14 @@ body {
     grid-area: 1/2/span 1/span 1;
     background: url("../res-icons/image_dots-1.svg") 0 0 no-repeat;
     background-size: 90%;
+  }
+
+  .project-tile:hover {
+    cursor: pointer;
+  }
+
+  .project-tile:active {
+    border: solid 3px #1a2236;
   }
 
   .project-tile-1 {
@@ -451,13 +464,17 @@ body {
   }
 
   .float-left {
-    width: 47%;
+    width: 48.5%;
     float: left;
   }
 
   .float-right {
-    width: 47%;
+    width: 48.5%;
     float: right;
+  }
+
+  .button-form-submit {
+    width: 50%;
   }
 
   /* styling for footer with social media links -ram */
