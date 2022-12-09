@@ -265,7 +265,6 @@ body {
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
-    
   }
 
   .nav-list-item > a {
@@ -278,14 +277,14 @@ body {
     color: #1a2236;
   }
 
-  .nav-list-item > a:hover{
+  .nav-list-item > a:hover {
     color: #fff;
     font-size: 1.7em;
     font-weight: 600;
     transition: 1s ease-out;
   }
 
- 
+
 
   /* to do - add javascript logic to enable/disable toggle icon -ram */
   .toggle-menu-icon {
@@ -329,7 +328,7 @@ body {
   }
 
   .button-generic {
-    font-size: 1.5em;
+    font-size: 1.3em;
     border: 0;
   }
 
@@ -337,7 +336,7 @@ body {
     border: solid 1px #1a2236;
     background: #fff;
     color: #1a2236;
-    transition: background 500ms ease-out, color 1s linear ;
+    transition: background 500ms ease-out, color 1s linear;
   }
 
   .button-generic:active {
@@ -490,7 +489,7 @@ body {
     order: 2;
   }
 
-  .button-aboutme{
+  .button-aboutme {
     width: 50%;
     height: 20%;
     font-size: 1.6em;
