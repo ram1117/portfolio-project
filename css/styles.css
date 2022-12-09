@@ -147,7 +147,9 @@ body {
 }
 
 .skillset1 {
-  background: #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100% no-repeat;
+  background:
+    #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100%
+    no-repeat;
 }
 
 .skillset2 {
@@ -269,6 +271,13 @@ body {
     color: #1a2236;
   }
 
+  .nav-list-item:hover {
+    font-size: 1.5em;
+    background-color: #7d7c84;
+    transition: 2s;
+    border-radius: 10px;
+  }
+
   /* to do - add javascript logic to enable/disable toggle icon -ram */
   .toggle-menu-icon {
     display: none;
@@ -346,7 +355,7 @@ body {
   }
 
   .project-image-dot {
-    grid-area: 1/2/span 1/span 1;
+    grid-area: 1/2 / span 1 / span 1;
     background: url("../res-icons/image_dots-1.svg") 0 0 no-repeat;
     background-size: 90%;
   }
@@ -360,46 +369,48 @@ body {
   }
 
   .project-tile-1 {
-    grid-area: 1/3/span 3/span 5;
+    grid-area: 1/3 / span 3 / span 5;
   }
 
   .project-tile-2 {
-    grid-area: 3/1/span 1/span 2;
+    grid-area: 3/1 / span 1 / span 2;
   }
 
   .project-image-art-1 {
-    grid-area: 3/3/span 1/span 2;
+    grid-area: 3/3 / span 1 / span 2;
     background: url("../res-icons/image-geometry_2.svg") 0 100% no-repeat;
     background-size: contain;
   }
 
   .project-tile-3 {
-    grid-area: 3 /5 /span 1/span 3;
+    grid-area: 3 /5 / span 1 / span 3;
   }
 
   .project-tile-4 {
-    grid-area: 4/ 1/ span 2/span 4;
+    grid-area: 4/ 1 / span 2 / span 4;
   }
 
   .project-tile-5 {
-    grid-area: 3 /5 /span 2/span 3;
+    grid-area: 3 /5 / span 2 / span 3;
     z-index: 2;
     flex-direction: column-reverse;
   }
 
   .project-image-art-2 {
-    grid-area: 5/5/span 1/span 3;
+    grid-area: 5/5 / span 1 / span 3;
     background: url("../res-icons/image-geometry_3.svg") 0 0 no-repeat;
     background-size: contain;
   }
 
   .project-image-art-3 {
-    grid-area: 6/ 1/span 1/span 4;
-    background: url("../res-icons/image-geometry_5.svg") 0 0 no-repeat, url("../res-icons/image-geometry_4.svg") 100% 0 no-repeat;
+    grid-area: 6/ 1 / span 1 / span 4;
+    background:
+      url("../res-icons/image-geometry_5.svg") 0 0 no-repeat,
+      url("../res-icons/image-geometry_4.svg") 100% 0 no-repeat;
   }
 
   .project-tile-6 {
-    grid-area: 6 / 5 /span 1/span 2;
+    grid-area: 6 / 5 / span 1 / span 2;
   }
 
   .project-thumbnail {
@@ -482,7 +493,9 @@ body {
   /* styling for about-me section -ram */
 
   .contact-me-section {
-    background: url("../res-icons/image-geometry_6.svg") 0 0 no-repeat, url("../res-icons/image-geometry_7.svg") 100% 100% no-repeat;
+    background:
+      url("../res-icons/image-geometry_6.svg") 0 0 no-repeat,
+      url("../res-icons/image-geometry_7.svg") 100% 100% no-repeat;
     background-size: 20%, 20%;
   }
 
@@ -538,5 +551,10 @@ body {
     margin: 0;
     float: right;
     width: 30%;
+  }
+
+  .link-container > a > img:hover {
+    transform: scale(2);
+    transition: transform 1s;
   }
 }
