@@ -15,30 +15,42 @@
       <!-- logo image added in the background using css -->
       <!-- toggle menu to be implemented -->
       <nav class="nav-bar">
+        <!-- menu to be replaced by toggle button menu in mobile version -->
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#intro-section">Hello</a></li>
+          <li class="nav-list-item"><a href="#projects-section">Portfolio</a></li>
+          <li class="nav-list-item"><a href="#about-me-section">About</a></li>
+          <li class="nav-list-item"><a href="#contact-me-section">Contact</a></li>
+        </ul>
         <a href="#">
           <img class="toggle-menu-icon" src="res-icons/ic_menu.svg" alt="toggle menu hamburger icon" />
         </a>
       </nav>
     </header>
     <!-- main intro section -->
-    <section class="intro-section">
-      <header>
-        <h2 class="section-header">Ram Kumar Karuppusamy</h2>
-        <p class="section-content">
-          Hello! I am a full-stack web developer.I can build responsive
-          websites. Please look through my previous projects <br />If you like
-          my work and want to hire me for projects, please contact me
-        </p>
-      </header>
-      <button class="button-generic">Start Collaboration</button>
+    <section class="intro-section" id="intro-section">
+      <div class="intro-container">
+        <header>
+          <h2 class="section-header">Ram Kumar Karuppusamy</h2>
+          <p class="section-content">
+            Hello! I am a full-stack web developer. I can build responsive
+            websites. Please look through my previous projects. <br />If you like
+            my work and want to hire me for projects, please contact me
+          </p>
+          <button class="button-generic">Start Collaboration</button>
+          <div class="image-art-dot"></div>
+        </header>
+        <div class="image-art-intro"></div>
+      </div>
       <!-- design art added in the background using css -->
     </section>
     <!-- porjects information section -->
-    <section class="projects-section">
+    <section class="projects-section" id="projects-section">
       <h2 class="section-header">Projects</h2>
       <div class="projects-container">
+        <div class="project-image-dot"></div>
         <!-- individual project tile -->
-        <div class="project-tile">
+        <div class="project-tile project-tile-1">
           <img src="res-images/Rectangle 21.png" alt="open laptop top view" class="project-thumbnail" />
           <div class="project-details">
             <h3 class="project-title">Project 1</h3>
@@ -53,7 +65,7 @@
           </div>
         </div>
         <!-- individual project tile -->
-        <div class="project-tile">
+        <div class="project-tile project-tile-2">
           <img src="res-images/Rectangle 22.png" alt="open laptop and a mobile" class="project-thumbnail" />
           <div class="project-details">
             <h3 class="project-title">Project 2</h3>
@@ -67,8 +79,9 @@
             </button>
           </div>
         </div>
+        <div class="project-image-art-1"></div>
         <!-- individual project tile -->
-        <div class="project-tile">
+        <div class="project-tile project-tile-3">
           <img src="res-images/Rectangle 26.png" alt="open laptop tilted to right" class="project-thumbnail" />
           <div class="project-details">
             <h3 class="project-title">Project 3</h3>
@@ -83,7 +96,7 @@
           </div>
         </div>
         <!-- individual project tile -->
-        <div class="project-tile">
+        <div class="project-tile project-tile-4">
           <img src="res-images/Rectangle 27.png" alt="open laptop front view" class="project-thumbnail" />
           <div class="project-details">
             <h3 class="project-title">Project 4</h3>
@@ -98,7 +111,7 @@
           </div>
         </div>
         <!-- individual project tile -->
-        <div class="project-tile">
+        <div class="project-tile project-tile-5">
           <img src="res-images/Rectangle 46.png" alt="open laptop front view 2" class="project-thumbnail" />
           <div class="project-details">
             <h3 class="project-title">Project 5</h3>
@@ -112,8 +125,10 @@
             </button>
           </div>
         </div>
+        <div class="project-image-art-2"></div>
+        <div class="project-image-art-3"></div>
         <!-- individual project tile -->
-        <div class="project-tile">
+        <div class="project-tile project-tile-6">
           <img src="res-images/Rectangle 47.png" alt="open laptop left side view" class="project-thumbnail" />
           <div class="project-details">
             <h3 class="project-title">Project 6</h3>
@@ -130,7 +145,7 @@
       </div>
     </section>
     <!-- About me section -->
-    <section class="about-me-section">
+    <section class="about-me-section" id="about-me-section">
       <header>
         <h2 class="section-header">About</h2>
         <p class="section-content">
@@ -145,60 +160,80 @@
           Get my CV <img src="" alt="" />
         </button>
       </header>
-      <!-- skill set 1 -->
-      <div class="skillset skillset1">
-        <h4 class="skillset-header">Languages</h4>
-        <ul class="skill-list">
-          <li class="skill-item">Javascript(ES5)</li>
-          <li class="skill-item">Ruby</li>
-          <li class="skill-item">HTML</li>
-          <li class="skill-item">CSS</li>
-        </ul>
+      <div class="skillset-grid">
+        <!-- skill set 1 -->
+        <div class="skillset skillset1">
+          <h4 class="skillset-header">Languages</h4>
+          <ul class="skill-list">
+            <li class="skill-item">Javascript(ES5)</li>
+            <li class="skill-item">Ruby</li>
+            <li class="skill-item">HTML</li>
+            <li class="skill-item">CSS</li>
+          </ul>
+        </div>
+        <!-- skill set 2 -->
+        <div class="skillset skillset2">
+          <h4 class="skillset-header">Frameworks</h4>
+          <ul class="skill-list">
+            <li class="skill-item">Bootstrap</li>
+            <li class="skill-item">Ruby on Rails</li>
+            <li class="skill-item">RSpec</li>
+            <li class="skill-item">Capibara</li>
+            <li class="skill-item">Selenium</li>
+          </ul>
+        </div>
+        <!-- skill set 3 -->
+        <div class="skillset skillset3">
+          <h4 class="skillset-header">Skills</h4>
+          <ul class="skill-list">
+            <li class="skill-item">CodeKit</li>
+            <li class="skill-item">Codepen</li>
+            <li class="skill-item">GitHub</li>
+            <li class="skill-item">GitLab</li>
+            <li class="skill-item">Terminal</li>
+          </ul>
+        </div>
+        <div class="skillset-image-art"></div>
       </div>
-      <!-- skill set 2 -->
-      <div class="skillset skillset2">
-        <h4 class="skillset-header">Frameworks</h4>
-        <ul class="skill-list">
-          <li class="skill-item">Bootstrap</li>
-          <li class="skill-item">Ruby on Rails</li>
-          <li class="skill-item">RSpec</li>
-          <li class="skill-item">Capibara</li>
-          <li class="skill-item">Selenium</li>
-        </ul>
-      </div>
-      <!-- skill set 3 -->
-      <div class="skillset skillset3">
-        <h4 class="skillset-header">Skills</h4>
-        <ul class="skill-list">
-          <li class="skill-item">CodeKit</li>
-          <li class="skill-item">Codepen</li>
-          <li class="skill-item">GitHub</li>
-          <li class="skill-item">GitLab</li>
-          <li class="skill-item">Terminal</li>
-        </ul>
-      </div>
+
     </section>
     <!-- Contacts section -->
-    <section class="contact-me-section">
-      <header class="contact-header">
-        <h2 class="section-header">Get Started</h2>
-        <p class="section-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-      </header>
-      <!-- visitor cotact form -->
-      <form class="visitor-form" action="https://formspree.io/f/mvoyeabj" method="post">
-        <input class="form-item" type="text" name="name" placeholder="Your name" required maxlength="30" />
-        <input class="form-item" type="email" name="email" placeholder="Your email" required />
-        <textarea class="form-item form-textarea" name="message" rows="5" placeholder="Enter your message here..."
-          required maxlength="300"></textarea>
-        <button class="button-generic" type="submit">Start collaboration</button>
-      </form>
+    <section class="contact-me-section" id="contact-me-section">
+      <div class="contact-container">
+        <header class="contact-header">
+          <h2 class="section-header">Get Started</h2>
+          <p class="section-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </header>
+        <!-- visitor cotact form -->
+        <form class="visitor-form" action="https://formspree.io/f/mvoyeabj" method="post">
+          <div class="form-item float-left">
+            <label for="form-name">Your name</label>
+            <input class="form-item-input form-item-name" id="form-name" type="text" name="name" placeholder="Your name" required
+              maxlength="30" />
+          </div>
+          <div class="form-item float-right">
+            <label for="form-email">Your email</label>
+            <input class="form-item-input form-item-email" id="form-email" type="email" name="email" placeholder="Your email"
+              required />
+          </div>
+          <div class="form-item">
+            <label for="form-message">Message</label>
+            <textarea class="form-item-input form-textarea" id="form-message" name="message" rows="5" placeholder="Enter your message here..."
+            required maxlength="300"></textarea>
+          </div>
+          
+          <button class="button-generic button-form-submit" type="submit">Start collaboration</button>
+        </form>
+      </div>
+
     </section>
     <footer class="social-links">
       <a class="resume-link" href="#">
         <div>Get my Resume</div>
+        <div class="icon-placeholder"></div>
       </a>
       <!-- to do : update correct links for the portfolio -->
       <div class="link-container">
@@ -220,7 +255,6 @@
         <a href="www.angelist.com">
           <img src="res-icons/ic_angellist-1.svg" alt="angellist icon white ">
         </a>
-
       </div>
     </footer>
   </div>
