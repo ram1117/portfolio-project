@@ -252,30 +252,36 @@ body {
     background: #fff;
   }
 
+  .nav-header:hover {
+    background-color: #b5b3c0;
+    transition: background-color 1s ease-in;
+  }
+
   .nav-list {
     margin: 0 auto;
-    padding-top: 3vh;
+    height: 10vh;
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
   }
 
   .nav-list-item > a {
+    padding: 2.5vh;
     text-decoration: none;
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 1.7em;
     color: #1a2236;
   }
 
-  .nav-list-item:hover {
-    font-size: 1.5em;
-    background-color: #7d7c84;
-    transition: 2s;
-    border-radius: 10px;
+  .nav-list-item > a:hover {
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 600;
+    transition: 1s ease-out;
   }
 
   /* to do - add javascript logic to enable/disable toggle icon -ram */
@@ -320,18 +326,26 @@ body {
   }
 
   .button-generic {
-    width: 70%;
-    height: 5vh;
-    font-size: 1.5em;
+    font-size: 1.3em;
     border: 0;
   }
 
   .button-generic:hover {
     border: solid 1px #1a2236;
+    background: #fff;
+    color: #1a2236;
+    transition: background 500ms ease-out, color 1s linear;
   }
 
   .button-generic:active {
     border: solid 3px #1a2236;
+  }
+
+  .button-intro {
+    width: 50%;
+    height: 50%;
+    font-size: 1.6em;
+    font-weight: 400;
   }
 
   /* styling for projects section -ram */
@@ -473,6 +487,13 @@ body {
     order: 2;
   }
 
+  .button-aboutme {
+    width: 50%;
+    height: 20%;
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+
   .skillset-grid {
     display: grid;
     order: 1;
@@ -510,12 +531,11 @@ body {
 
   .visitor-form {
     display: block;
-    font-size: 0.8em;
   }
 
   .form-item > label {
     display: block;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: left;
     font-family: Poppins, sans-serif;
     color: #7d7c84;
@@ -532,7 +552,10 @@ body {
   }
 
   .button-form-submit {
-    width: 50%;
+    width: 40%;
+    height: 15%;
+    font-size: 1.6em;
+    font-weight: 400;
   }
 
   /* styling for footer with social media links -ram */
