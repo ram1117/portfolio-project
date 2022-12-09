@@ -147,7 +147,8 @@ body {
 }
 
 .skillset1 {
-  background: #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100%
+  background:
+    #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100%
     no-repeat;
 }
 
@@ -403,7 +404,8 @@ body {
 
   .project-image-art-3 {
     grid-area: 6/ 1 / span 1 / span 4;
-    background: url("../res-icons/image-geometry_5.svg") 0 0 no-repeat,
+    background:
+      url("../res-icons/image-geometry_5.svg") 0 0 no-repeat,
       url("../res-icons/image-geometry_4.svg") 100% 0 no-repeat;
   }
 
@@ -491,7 +493,8 @@ body {
   /* styling for about-me section -ram */
 
   .contact-me-section {
-    background: url("../res-icons/image-geometry_6.svg") 0 0 no-repeat,
+    background:
+      url("../res-icons/image-geometry_6.svg") 0 0 no-repeat,
       url("../res-icons/image-geometry_7.svg") 100% 100% no-repeat;
     background-size: 20%, 20%;
   }
@@ -550,9 +553,8 @@ body {
     width: 30%;
   }
 
-  .link-container>a>img:hover{
+  .link-container > a > img:hover {
     transform: scale(2);
     transition: transform 1s;
-   
   }
 }
