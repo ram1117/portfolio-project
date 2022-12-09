@@ -384,6 +384,7 @@ body {
   .project-tile-5 {
     grid-area: 3 /5 /span 2/span 3;
     z-index: 2;
+    flex-direction: column-reverse;
   }
 
   .project-image-art-2 {
@@ -413,37 +414,34 @@ body {
   .project-tile-1 > .project-details {
     display: block;
     padding: 0 5vw;
-    height:42%;
+    height: 42%;
   }
 
   .project-tile-1 > .project-thumbnail {
     height: 25%;
   }
 
-  .project-tile-1 > .project-details > .button-project{
+  .project-tile-1 > .project-details > .button-project {
     width: 40%;
     border: solid 2px #fff;
   }
 
-  .project-tile-5{
-    flex-direction: column-reverse;
-  }
   .project-tile-5 > .project-details {
     display: block;
     padding: 0 5vw;
-    height:42%
+    height: 42%;
   }
 
   .project-tile-5 > .project-thumbnail {
     height: 40%;
   }
 
-  .project-tile-5 > .project-details > .button-project{
+  .project-tile-5 > .project-details > .button-project {
     width: 50%;
     border: solid 2px #fff;
   }
 
-  .project-tile-5 > .project-details > ul > li:nth-child(3){
+  .project-tile-5 > .project-details > ul > li:nth-child(3) {
     display: none;
   }
 
