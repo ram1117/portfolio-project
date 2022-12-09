@@ -284,8 +284,6 @@ body {
     transition: 1s ease-out;
   }
 
-
-
   /* to do - add javascript logic to enable/disable toggle icon -ram */
   .toggle-menu-icon {
     display: none;
