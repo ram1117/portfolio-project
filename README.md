@@ -48,6 +48,7 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 - **Technical skillset**
 - **contact form**
 - **social media links**
+- **available on github pages**
 
 
 
@@ -76,6 +77,10 @@ https://github.com/ram1117/portfolio-project.git
 Install this project with:
 
 No installation required for this project
+
+A live Github pages version of the project can be accessed usiung the following link:
+
+https://ram1117.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
