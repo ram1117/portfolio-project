@@ -52,7 +52,7 @@ body {
 
 .button-generic {
   width: 100%;
-  height: 7vh;
+  height: 5vh;
   font-family: Poppins, sans-serif;
   color: #fff;
   text-align: center;
@@ -247,7 +247,7 @@ body {
 @media screen and (min-width: 768px) {
   /* styling for navigation bar elements -ram */
   .nav-header {
-    height: 10vh;
+    height: 6vh;
     display: block;
     background: #fff;
   }
@@ -259,7 +259,7 @@ body {
 
   .nav-list {
     margin: 0 auto;
-    height: 10vh;
+    height: 6vh;
     display: flex;
     width: 50%;
     justify-content: space-around;
