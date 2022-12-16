@@ -15,6 +15,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
   
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -51,6 +52,17 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 - **available on github pages**
 
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+A live version of the web page is hosted on Github Pages. It can be accessed using the below link
+
+- [https://ram1117.github.io/]
+
+A short presentation of this project is hosted on Loom and can be accessed with the below link
+
+- [https://www.loom.com/share/983ef270f1b04063860a6dda8c9d9b07]
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,9 +90,6 @@ Install this project with:
 
 No installation required for this project
 
-A live Github pages version of the project can be accessed usiung the following link:
-
-https://ram1117.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
