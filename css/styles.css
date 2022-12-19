@@ -2,18 +2,45 @@ body {
   margin: 0 auto;
 }
 
-.nav-header {
-  display: flex;
-  justify-content: flex-end;
+.nav-bar {
   height: 15vh;
-  align-items: center;
   background: #fff url("../res-icons/image_geometry_1.svg") 0 0 no-repeat;
   background-size: contain;
-  padding-right: 5vh;
 }
 
-.nav-list {
+.nav-bar-expand{
+  height: 100vh;
+  background: url("../res-icons/image_geometry_menu_1.svg") 0 0 no-repeat,
+  url("../res-icons/image_geometry_menu_2.svg") 0 100% no-repeat;
+  background-size: 90%;
+}
+
+.nav-list{
+  clear: right;
+  list-style: none;
+  height: 50%;
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 20%;
+}
+
+.nav-list-item > a{
+  text-decoration: none;
+  color: #1a2236;
+  font-size: 1em;
+  line-height: 3em;
+}
+
+.toggle-menu-icon{
+  float: right;
+  padding: 5vw;
+}
+.invisible {
   display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .intro-section {
@@ -148,8 +175,7 @@ body {
 
 .skillset1 {
   background:
-    #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100%
-    no-repeat;
+    #1c528a url("../res-icons/ic_languages_mob.svg") 100% 100% no-repeat;
 }
 
 .skillset2 {
@@ -191,7 +217,7 @@ body {
   align-items: stretch;
 }
 
-.form-item > label {
+.form-item>label {
   display: none;
 }
 
@@ -223,7 +249,7 @@ body {
   width: 40%;
 }
 
-.resume-link > div {
+.resume-link>div {
   color: #98dede;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -245,12 +271,17 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
   /* styling for navigation bar elements -ram */
-  .nav-header {
-    height: 6vh;
+
+  .nav-bar{
+    padding: 0;
+    margin: 0;
+    height: 10vh;
     display: block;
     background: #fff;
   }
+
 
   .nav-header:hover {
     background-color: #b5b3c0;
@@ -267,7 +298,7 @@ body {
     align-items: center;
   }
 
-  .nav-list-item > a {
+  .nav-list-item>a {
     padding: 2.5vh;
     text-decoration: none;
     font-family: Poppins, sans-serif;
@@ -277,7 +308,7 @@ body {
     color: #1a2236;
   }
 
-  .nav-list-item > a:hover {
+  .nav-list-item>a:hover {
     color: #fff;
     font-size: 1.7em;
     font-weight: 600;
@@ -301,7 +332,7 @@ body {
     grid-template-rows: 1fr;
   }
 
-  .intro-container > header {
+  .intro-container>header {
     padding: 5%;
     display: grid;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -359,7 +390,7 @@ body {
     gap: 0;
   }
 
-  .projects-section > h2 {
+  .projects-section>h2 {
     transform: rotate(-90deg);
     width: 50%;
     text-align: left;
@@ -436,41 +467,41 @@ body {
     display: none;
   }
 
-  .project-tile-1 > .project-details {
+  .project-tile-1>.project-details {
     display: block;
     padding: 0 5vw;
     height: 42%;
   }
 
-  .project-tile-1 > .project-thumbnail {
+  .project-tile-1>.project-thumbnail {
     height: 25%;
   }
 
-  .project-tile-1 > .project-details > .button-project {
+  .project-tile-1>.project-details>.button-project {
     width: 40%;
     border: solid 2px #fff;
   }
 
-  .project-tile-5 > .project-details {
+  .project-tile-5>.project-details {
     display: block;
     padding: 0 5vw;
     height: 42%;
   }
 
-  .project-tile-5 > .project-thumbnail {
+  .project-tile-5>.project-thumbnail {
     height: 40%;
   }
 
-  .project-tile-5 > .project-details > .button-project {
+  .project-tile-5>.project-details>.button-project {
     width: 50%;
     border: solid 2px #fff;
   }
 
-  .project-tile-5 > .project-details > ul > li:nth-child(3) {
+  .project-tile-5>.project-details>ul>li:nth-child(3) {
     display: none;
   }
 
-  .project-tile-5 > .project-details > .tech-item-list {
+  .project-tile-5>.project-details>.tech-item-list {
     margin-bottom: 2vh;
   }
 
@@ -482,7 +513,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-me-section > header {
+  .about-me-section>header {
     padding: 15%;
     order: 2;
   }
@@ -533,7 +564,7 @@ body {
     display: block;
   }
 
-  .form-item > label {
+  .form-item>label {
     display: block;
     font-size: 1em;
     text-align: left;
@@ -576,7 +607,7 @@ body {
     width: 30%;
   }
 
-  .link-container > a > img:hover {
+  .link-container>a>img:hover {
     transform: scale(2);
     transition: transform 1s;
   }

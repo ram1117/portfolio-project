@@ -7,5 +7,8 @@ node_modules/
 .stylelintrc.json
 
 #ignoring hint report folder produced by hint
-
 hint-report/
+
+#ignoring esLint linter files
+
+.eslintrc.json
