@@ -1,7 +1,7 @@
 const menuIcon = document.querySelector('#toggle-menu-icon');
 const navbar = document.querySelector('.nav-bar');
 const navList = document.querySelector('.nav-list');
-const navListItem = document.querySelectorAll('.nav-list-item');
+const navListItem = document.querySelectorAll('.nav-list-item > a');
 
 function expandMenu() {
   menuIcon.src = 'res-icons/ic_cross.svg';
@@ -28,9 +28,11 @@ function checkToggle() {
   }
 }
 
+// adding event listener to toggle menu icon
 menuIcon.addEventListener('click', checkToggle);
 
-for (const listItem of navListItem) {
+// adding event listener to menu list items
+navListItem.forEach((listItem) => {
   listItem.addEventListener('click', () => {
     if (window.innerWidth <= 768) {
       collapseMenu();
@@ -38,4 +40,4 @@ for (const listItem of navListItem) {
       menuIcon.dataset.toggleMenu = 'true';
     }
   });
-}
+});
