@@ -2,17 +2,13 @@
 function createProjectTile(projectObj) {
   let tile = document.createElement('div');
   tile.classList.add('project-tile');
+  tile.id='project-tile-'+projectObj.projectno;
   let thumbNail = document.createElement('img');
   thumbNail.src = projectObj.image;
   thumbNail.alt = projectObj.imageAlt;
   thumbNail.classList.add('project-thumbnail');
-  thumbNail.onmouseover = function(){displayDetails()};
   tile.appendChild(thumbNail);
-
-  function displayDetails(){
-
-  }
-
+  
   let details = document.createElement('div');
   details.classList.add('project-details');
 
@@ -39,6 +35,23 @@ function createProjectTile(projectObj) {
   details.appendChild(projectButton);
 
   tile.appendChild(details);
+
+  function displayDetails(){
+    if(window.innerWidth>768){
+      details.classList.add('project-details-hover');
+      details.style.display='block';
+    }
+    
+  }
+  function hideDetails(){
+    if(window.innerWidth>768){
+      details.style.display='none';
+      thumbNail.style.display='block';
+    }
+  }
+  tile.onmouseover = function(){displayDetails()};
+  tile.onmouseleave = function(){hideDetails()};
+  
   
   return tile;
 }
