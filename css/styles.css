@@ -114,11 +114,12 @@ body {
 .project-tile {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
 }
 
 .project-thumbnail {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .project-details {
@@ -144,11 +145,164 @@ body {
 .tech-item {
   display: inline;
   font-family: Poppins, sans-serif;
-  padding: 1vh 2vh;
-  margin-right: 2vw;
+  padding: 1vh;
+  margin-right: 1vw;
   background: #98dede;
   color: #1a2236;
   font-size: 0.8em;
+}
+
+.popup-modal {
+  width: 100%;
+}
+
+.popup-container {
+  position: fixed;
+  font-family: Poppins, sans-serif;
+  z-index: 1;
+  width: 90%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 5%;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.popup-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-close-btn {
+  object-fit: scale-down;
+  width: 10%;
+  height: 5%;
+}
+
+.popup-header {
+  color: #1a2236;
+  width: 60%;
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1em;
+}
+
+.project-scroll-container {
+  height: 40%;
+  margin-top: 5vh;
+}
+
+.thumbnail-scroll {
+  height: 15%;
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.thumb-scroll-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-description {
+  color: #1a2236;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  text-align: left;
+  word-wrap: normal;
+}
+
+.pop-btn-contnr {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popup-button {
+  width: 80%;
+  padding: 10px;
+  border: solid 3px #1a2236;
+  color: #1a2236;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.popup-button:hover {
+  background: #1a2236;
+  color: #fff;
+  border: solid 3px #fff;
+  cursor: pointer;
+}
+
+.left-button {
+  float: left;
+  width: 10%;
+  min-height: 100%;
+  border: 0;
+  background: url("../res-icons/Vector 4.svg") 0 50% no-repeat;
+}
+
+.right-button {
+  float: right;
+  width: 10%;
+  border: 0;
+  background: url("../res-icons/Vector 5.svg") 100% 50% no-repeat;
+  min-height: 100%;
+}
+
+.left-button:hover {
+  cursor: pointer;
+}
+
+.right-button:hover {
+  cursor: pointer;
+}
+
+.live-button {
+  background: #fff url("../res-icons/ic_link.svg") 90% 30% no-repeat;
+  background-size: 6%;
+}
+
+.src-button {
+  background: #fff url("../res-icons/ic_github_white.svg") 90% 30% no-repeat;
+  background-size: 6%;
+}
+
+.pop-tech-cntnr {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  list-style: none;
+  display: flex;
+}
+
+.pop-tech-item {
+  border: solid 1px #1a2236;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1em;
+  text-align: center;
+  padding: 1vh;
+  margin: 0 1vh;
+}
+
+.proj-nav {
+  display: none;
 }
 
 .button-project {
@@ -273,6 +427,11 @@ body {
   justify-content: space-between;
 }
 
+.project-details-hover {
+  position: absolute;
+  width: 40%;
+}
+
 @media screen and (min-width: 768px) {
   /* styling for navigation bar elements -ram */
   .nav-bar {
@@ -302,7 +461,6 @@ body {
     color: #1a2236;
   }
 
-  /* to do - add javascript logic to enable/disable toggle icon -ram */
   .toggle-menu-icon {
     display: none;
   }
@@ -400,7 +558,7 @@ body {
   }
 
   .project-tile-1 {
-    grid-area: 1/3 / span 3 / span 5;
+    grid-area: 1/3 / span 2 / span 5;
   }
 
   .project-tile-2 {
@@ -422,9 +580,7 @@ body {
   }
 
   .project-tile-5 {
-    grid-area: 3 /5 / span 2 / span 3;
-    z-index: 2;
-    flex-direction: column-reverse;
+    grid-area: 4 /5 / span 1 / span 3;
   }
 
   .project-image-art-2 {
@@ -453,42 +609,112 @@ body {
     display: none;
   }
 
-  .project-tile-1 > .project-details {
-    display: block;
-    padding: 0 5vw;
-    height: 42%;
+  .button-project {
+    border: solid 2px #fff;
   }
 
-  .project-tile-1 > .project-thumbnail {
-    height: 25%;
+  /* styling for popup */
+  .popup-modal {
+    position: fixed;
+    font-family: Poppins, sans-serif;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #1a2236;
+    margin: 0 auto;
   }
 
-  .project-tile-1 > .project-details > .button-project {
+  .popup-container {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    z-index: 2;
+    width: 80%;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .popup-header {
+    width: 100%;
+    font-size: 3.2em;
+    line-height: 2em;
+  }
+
+  .project-scroll-container {
+    width: 100%;
+    height: 60%;
+    margin-top: 5vh;
+  }
+
+  .popup-description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.9em;
+    margin-top: 5vh;
+  }
+
+  .pop-btn-contnr {
+    height: 10%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 100%;
+  }
+
+  .live-button {
+    margin-right: 4vw;
+    width: 30%;
+  }
+
+  .src-button {
+    width: 30%;
+  }
+
+  .proj-nav {
+    height: 10%;
+    width: 100%;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .proj-nav-left {
+    text-align: center;
+    border: none;
     width: 40%;
-    border: solid 2px #fff;
+    background: url("../res-icons/ic_arrow_left.svg") 0 0 no-repeat;
+    background-size: contain;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #1a2236;
   }
 
-  .project-tile-5 > .project-details {
-    display: block;
-    padding: 0 5vw;
-    height: 42%;
+  .proj-nav-left:hover {
+    cursor: pointer;
   }
 
-  .project-tile-5 > .project-thumbnail {
-    height: 40%;
+  .proj-nav-right {
+    text-align: center;
+    border: none;
+    width: 40%;
+    background: url("../res-icons/ic_arrow_right-6.svg") 90% 0 no-repeat;
+    background-size: contain;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #1a2236;
   }
 
-  .project-tile-5 > .project-details > .button-project {
-    width: 50%;
-    border: solid 2px #fff;
-  }
-
-  .project-tile-5 > .project-details > ul > li:nth-child(3) {
-    display: none;
-  }
-
-  .project-tile-5 > .project-details > .tech-item-list {
-    margin-bottom: 2vh;
+  .proj-nav-right:hover {
+    cursor: pointer;
   }
 
   /* styling for about-me section -ram */
