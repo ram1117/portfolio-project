@@ -112,6 +112,8 @@ const projectThumbnails = [];
 projectArray.forEach((project) => {
   projectThumbnails.push(project.image);
 });
+
+// function to load project details into popup
 function loadNewProj(projectObj) {
   const pheader = document.querySelector('.popup-header');
   const ptechCntnr = document.querySelector('.pop-tech-cntnr');
@@ -192,6 +194,7 @@ function loadNewProj(projectObj) {
   }
 }
 
+// function to create popup for mobile version
 function createMobilePopup() {
   function dismissPopup() {
     const container = document.querySelector('.projects-container');
@@ -250,6 +253,7 @@ function createMobilePopup() {
   return popup;
 }
 
+// function to create popup for mobile version
 function createDesktopPopup() {
   const desktopPop = createMobilePopup();
   desktopPop.classList.add('popup-desktop');

@@ -108,7 +108,7 @@ No installation required for this project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **add functionalities for buttons and navigation**
+- [ ] **Update personal projects to the portfolio**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
