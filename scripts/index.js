@@ -152,6 +152,8 @@ function loadNewProj(projectObj) {
     thmbScroll.appendChild(imgElement);
   });
 
+  thmbScroll.firstChild.style.border='solid 3px #1a2236';
+
   if (projIndex === 0) {
     lButton.setAttribute('disabled', '');
   }
@@ -205,6 +207,7 @@ function createMobilePopup() {
   const popup = document.createElement('div');
   popup.classList.add('popup-container');
   const closeIcon = document.createElement('img');
+  closeIcon.classList.add('popup-close-btn');
   closeIcon.src = 'res-icons/ic_cross-1.svg';
   closeIcon.alt = 'close popup icon';
   closeIcon.style.float = 'right';
@@ -255,7 +258,17 @@ function createMobilePopup() {
 
 // function to create popup for mobile version
 function createDesktopPopup() {
+  let desktopModal = document.createElement('div');
+  desktopModal.classList.add('desktop-modal');
   const desktopPop = createMobilePopup();
+  const closeIcon = desktopPop.querySelector('.popup-close-btn');
+  closeIcon.onclick = function() {
+    const container = document.querySelector('.projects-container');
+    const pop = document.querySelector('.desktop-modal');
+    container.removeChild(pop);
+    document.body.style.overflow = 'auto';
+  };
+  desktopPop.classList.remove('popup-container');
   desktopPop.classList.add('popup-desktop');
   const dtheader = desktopPop.querySelector('.popup-header');
   dtheader.classList.add('dt-pop-header');
@@ -279,7 +292,8 @@ function createDesktopPopup() {
   projNav.append(leftProjBtn);
   projNav.append(rightProjBtn);
   desktopPop.append(projNav);
-  return desktopPop;
+  desktopModal.appendChild(desktopPop);
+  return desktopModal;
 }
 
 function createPopup(project) {
@@ -370,8 +384,12 @@ function createDesktopLayout() {
 }
 
 function removeProjects(container) {
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
+
+  const children = container.children;
+  for(let i=0;i<children.length;i+=1){
+    if(children[i].hasAttribute==='id'){
+      container.removeChild(children[i]);
+    }
   }
 }
 
