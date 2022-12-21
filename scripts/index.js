@@ -152,7 +152,7 @@ function loadNewProj(projectObj) {
     thmbScroll.appendChild(imgElement);
   });
 
-  thmbScroll.firstChild.style.border='solid 3px #1a2236';
+  thmbScroll.firstChild.style.border = 'solid 3px #1a2236';
 
   if (projIndex === 0) {
     lButton.setAttribute('disabled', '');
@@ -258,11 +258,11 @@ function createMobilePopup() {
 
 // function to create popup for mobile version
 function createDesktopPopup() {
-  let desktopModal = document.createElement('div');
+  const desktopModal = document.createElement('div');
   desktopModal.classList.add('desktop-modal');
   const desktopPop = createMobilePopup();
   const closeIcon = desktopPop.querySelector('.popup-close-btn');
-  closeIcon.onclick = function() {
+  closeIcon.onclick = function () {
     const container = document.querySelector('.projects-container');
     const pop = document.querySelector('.desktop-modal');
     container.removeChild(pop);
@@ -384,10 +384,9 @@ function createDesktopLayout() {
 }
 
 function removeProjects(container) {
-
-  const children = container.children;
-  for(let i=0;i<children.length;i+=1){
-    if(children[i].hasAttribute==='id'){
+  const { children } = container;
+  for (let i = 0; i < children.length; i += 1) {
+    if (children[i].hasAttribute === 'id') {
       container.removeChild(children[i]);
     }
   }

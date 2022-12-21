@@ -30,7 +30,7 @@ body {
   padding-bottom: 30%;
 }
 
-.nav-list-item>a {
+.nav-list-item > a {
   text-decoration: none;
   color: #1a2236;
   font-family: Poppins, sans-serif;
@@ -455,7 +455,7 @@ body {
   align-items: stretch;
 }
 
-.form-item>label {
+.form-item > label {
   display: none;
 }
 
@@ -487,7 +487,7 @@ body {
   width: 40%;
 }
 
-.resume-link>div {
+.resume-link > div {
   color: #98dede;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -514,7 +514,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
   /* styling for navigation bar elements -ram */
   .nav-bar {
     padding: 5vh;
@@ -533,7 +532,7 @@ body {
     align-items: center;
   }
 
-  .nav-list-item>a {
+  .nav-list-item > a {
     padding: 2.5vh;
     text-decoration: none;
     font-family: Poppins, sans-serif;
@@ -559,7 +558,7 @@ body {
     grid-template-rows: 1fr;
   }
 
-  .intro-container>header {
+  .intro-container > header {
     padding: 5%;
     display: grid;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -616,7 +615,7 @@ body {
     gap: 0;
   }
 
-  .projects-section>h2 {
+  .projects-section > h2 {
     transform: rotate(-90deg);
     width: 50%;
     text-align: left;
@@ -703,7 +702,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-me-section>header {
+  .about-me-section > header {
     padding: 15%;
     order: 2;
   }
@@ -751,7 +750,7 @@ body {
     display: block;
   }
 
-  .form-item>label {
+  .form-item > label {
     display: block;
     font-size: 1em;
     text-align: left;
@@ -791,7 +790,7 @@ body {
     width: 30%;
   }
 
-  .link-container>a>img:hover {
+  .link-container > a > img:hover {
     transform: scale(2);
     transition: transform 1s;
   }
