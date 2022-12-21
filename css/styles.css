@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .scroll-lock {
@@ -165,7 +164,7 @@ body {
   padding:0 5vw;
   margin: 0 auto;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 .popup-header {
@@ -427,7 +426,6 @@ body {
     color: #1a2236;
   }
 
-  /* to do - add javascript logic to enable/disable toggle icon -ram */
   .toggle-menu-icon {
     display: none;
   }

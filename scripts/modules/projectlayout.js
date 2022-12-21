@@ -28,7 +28,7 @@ function createProjectTile(projectObj) {
   let projectButton = document.createElement('button');
   projectButton.classList.add('button-generic', 'button-project');
   projectButton.textContent = 'See this Project';
-  projectButton.onclick = function () { createMobilePopup(projectObj) };
+  projectButton.onclick = function () { createPopup(projectObj) };
 
   details.appendChild(projTitle);
   details.appendChild(techContainer);
