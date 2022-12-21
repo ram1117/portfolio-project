@@ -161,32 +161,35 @@ body {
   left: 0;
   bottom: 0;
   background: #fff;
-  padding:0 5vw;
+  padding: 0 5vw;
   margin: 0 auto;
   overflow-y: scroll;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .popup-header {
+  color: #1a2236;
   font-weight: 700;
   font-size: 1.8em;
   line-height: 1em;
 }
 
-.scroll-container{
+.project-scroll-container {
   height: 50%;
   width: 90%;
   padding: 0;
   margin: 5vh 0;
 }
 
-.pop-thumbnail{
+.pop-thumbnail {
   width: 90%;
   height: 90%;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .popup-description {
+  color: #1a2236;
   width: 90%;
   font-weight: 400;
   font-size: 1.2em;
@@ -197,7 +200,7 @@ body {
 
 .pop-btn-contnr {
   width: 90%;
-  height: 30%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -206,12 +209,15 @@ body {
 
 .popup-button {
   width: 80%;
-  padding: 20px 0;
+  padding: 10px;
   border: solid 3px #1a2236;
   color: #1a2236;
+  font-family: Poppins,sans-serif;
   font-weight: 500;
   font-size: 1.25em;
-  line-height: 1.7em;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
 }
 
 .popup-button:hover {
@@ -221,35 +227,38 @@ body {
   cursor: pointer;
 }
 
-.left-button{
+.left-button {
   float: left;
   width: 10%;
   min-height: 100%;
   border: 0;
   background: url('../res-icons/Vector 4.svg') 0 50% no-repeat;
 }
-.right-button{
+
+.right-button {
   float: right;
   width: 10%;
   border: 0;
-  background: url('../res-icons/Vector 5.svg') 100% 50%  no-repeat;
+  background: url('../res-icons/Vector 5.svg') 100% 50% no-repeat;
   min-height: 100%;
 }
-.left-button:hover{
+
+.left-button:hover {
   cursor: pointer;
 }
-.right-button:hover{
+
+.right-button:hover {
   cursor: pointer;
 }
 
 .live-button {
   background: #fff url('../res-icons/ic_link.svg') 90% 30% no-repeat;
-  background-size: 10%;
+  background-size: 6%;
 }
 
 .src-button {
   background: #fff url('../res-icons/ic_github_white.svg') 90% 30% no-repeat;
-  background-size: 10%;
+  background-size: 6%;
 }
 
 .pop-tech-cntnr {
@@ -268,6 +277,83 @@ body {
   text-align: center;
   padding: 10px 10px;
   margin: 0 20px;
+}
+
+.popup-desktop {
+  margin: 0 auto;
+  /* width: 90%; */
+  /* height: 90%; */
+}
+
+.dt-pop-header {
+  font-size: 3.2em;
+  line-height: 2em;
+}
+
+.dt-pop-descr {
+  max-width: 70%;
+  font-size: 1.1em;
+  line-height: 1.9em;
+  text-align: left;
+  padding: 0 10vw;
+  margin: 0 auto;
+}
+
+.dt-btn-cntnr {
+  padding: 5vh 10vw;
+  height: 10%;
+  flex-direction: row;
+  justify-content: left;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.dt-live-button {
+  margin-right: 4vw;
+  width: 40%;
+}
+
+.dt-src-button {
+  width: 40%;
+}
+
+.proj-nav{
+  height: 10%;
+  max-width: 70%;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proj-nav-left{
+  text-align: center;
+  border: none;
+  width: 40%;
+  background: url('../res-icons/ic_arrow_left.svg') 0 0 no-repeat;
+  background-size: contain;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #1a2236;
+}
+
+.proj-nav-left:hover{
+  cursor: pointer;
+}
+
+.proj-nav-right{
+  text-align: center;
+  border: none;
+  width: 40%;
+  background: url('../res-icons/ic_arrow_right-6.svg') 90% 0 no-repeat;
+  background-size: contain;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #1a2236;
+}
+
+.proj-nav-right:hover{
+  cursor: pointer;
 }
 
 .button-project {
@@ -392,10 +478,11 @@ body {
   justify-content: space-between;
 }
 
-.project-details-hover{
- position: absolute;
- width: 40%;
-  }
+.project-details-hover {
+  position: absolute;
+  width: 40%;
+}
+
 @media screen and (min-width: 768px) {
 
   /* styling for navigation bar elements -ram */
@@ -574,10 +661,10 @@ body {
     display: none;
   }
 
-  .button-project{
+  .button-project {
     border: solid 2px #fff;
   }
-  
+
   /* styling for about-me section -ram */
 
   .about-me-section {
