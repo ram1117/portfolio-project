@@ -174,7 +174,7 @@ function loadNewProj(projectObj) {
   srcLink.href = projectObj.source;
 
   if (window.innerWidth > 768) {
-    pscrollCntnr.style.height='70%';
+    pscrollCntnr.style.height = '70%';
     const leftNavBtn = document.querySelector('.proj-nav-left');
     const rightNavBtn = document.querySelector('.proj-nav-right');
     if (projIndex === 0) {
