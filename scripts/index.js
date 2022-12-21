@@ -176,7 +176,6 @@ function loadNewProj(projectObj) {
   srcLink.href = projectObj.source;
 
   if (window.innerWidth > 768) {
-    pscrollCntnr.style.height = '70%';
     const leftNavBtn = document.querySelector('.proj-nav-left');
     const rightNavBtn = document.querySelector('.proj-nav-right');
     if (projIndex === 0) {
@@ -196,26 +195,30 @@ function loadNewProj(projectObj) {
   }
 }
 
-// function to create popup for mobile version
-function createMobilePopup() {
+// function to create popup for project details
+function createPopupWindow() {
   function dismissPopup() {
     const container = document.querySelector('.projects-container');
-    const pop = document.querySelector('.popup-container');
+    const pop = document.querySelector('.popup-modal');
     container.removeChild(pop);
     document.body.style.overflow = 'auto';
   }
+  const popupModal = document.createElement('div');
+  popupModal.classList.add('popup-modal');
   const popup = document.createElement('div');
   popup.classList.add('popup-container');
   const closeIcon = document.createElement('img');
   closeIcon.classList.add('popup-close-btn');
   closeIcon.src = 'res-icons/ic_cross-1.svg';
   closeIcon.alt = 'close popup icon';
-  closeIcon.style.float = 'right';
-  closeIcon.style.margin = '3vh 5vw';
   closeIcon.onclick = function () { dismissPopup(); };
 
+  const headerContainer = document.createElement('div');
+  headerContainer.classList.add('popup-header-container');
   const header = document.createElement('h1');
   header.classList.add('popup-header');
+  headerContainer.appendChild(header);
+  headerContainer.appendChild(closeIcon);
   const techContainer = document.createElement('ul');
   techContainer.classList.add('pop-tech-cntnr');
   const newDiv = document.createElement('div');
@@ -245,42 +248,6 @@ function createMobilePopup() {
   popBtnCntnr.appendChild(btn1);
   popBtnCntnr.appendChild(btn2);
 
-  popup.appendChild(closeIcon);
-  popup.appendChild(header);
-  popup.appendChild(techContainer);
-  popup.appendChild(newDiv);
-  popup.appendChild(thumbnailScroll);
-  popup.appendChild(newPar);
-  popup.appendChild(popBtnCntnr);
-
-  return popup;
-}
-
-// function to create popup for mobile version
-function createDesktopPopup() {
-  const desktopModal = document.createElement('div');
-  desktopModal.classList.add('desktop-modal');
-  const desktopPop = createMobilePopup();
-  const closeIcon = desktopPop.querySelector('.popup-close-btn');
-  closeIcon.onclick = function () {
-    const container = document.querySelector('.projects-container');
-    const pop = document.querySelector('.desktop-modal');
-    container.removeChild(pop);
-    document.body.style.overflow = 'auto';
-  };
-  desktopPop.classList.remove('popup-container');
-  desktopPop.classList.add('popup-desktop');
-  const dtheader = desktopPop.querySelector('.popup-header');
-  dtheader.classList.add('dt-pop-header');
-  const dtdescr = desktopPop.querySelector('.popup-description');
-  dtdescr.classList.add('dt-pop-descr');
-  const btnCntnr = desktopPop.querySelector('.pop-btn-contnr');
-  btnCntnr.classList.add('dt-btn-cntnr');
-  const dtliveBtn = desktopPop.querySelector('.live-button');
-  dtliveBtn.classList.add('dt-live-button');
-  const dtSrcBtn = desktopPop.querySelector('.src-button');
-  dtSrcBtn.classList.add('dt-src-button');
-
   const projNav = document.createElement('div');
   projNav.classList.add('proj-nav');
   const leftProjBtn = document.createElement('button');
@@ -291,19 +258,21 @@ function createDesktopPopup() {
   rightProjBtn.textContent = 'Next project';
   projNav.append(leftProjBtn);
   projNav.append(rightProjBtn);
-  desktopPop.append(projNav);
-  desktopModal.appendChild(desktopPop);
-  return desktopModal;
+
+  popup.appendChild(headerContainer);
+  popup.appendChild(techContainer);
+  popup.appendChild(newDiv);
+  popup.appendChild(thumbnailScroll);
+  popup.appendChild(newPar);
+  popup.appendChild(popBtnCntnr);
+  popup.appendChild(projNav);
+
+  popupModal.appendChild(popup);
+  return popupModal;
 }
 
 function createPopup(project) {
-  let popupwindow;
-  if (window.innerWidth <= 768) {
-    popupwindow = createMobilePopup();
-  }
-  if (window.innerWidth > 768) {
-    popupwindow = createDesktopPopup();
-  }
+  const popupwindow = createPopupWindow();
   const container = document.querySelector('.projects-container');
   container.appendChild(popupwindow);
   loadNewProj(project);
@@ -396,7 +365,10 @@ function createLayout() {
   if (window.innerWidth <= 768) createMobileLayout();
   else createDesktopLayout();
 }
+
 createLayout();
+
+window.onresize = createLayout();
 
 window.onresize = function () {
   if (window.innerWidth > 768) {

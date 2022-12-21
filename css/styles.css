@@ -152,6 +152,10 @@ body {
   font-size: 0.8em;
 }
 
+.popup-modal {
+  width: 100%;
+}
+
 .popup-container {
   position: fixed;
   font-family: Poppins, sans-serif;
@@ -160,31 +164,43 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
+  right: 0;
+  padding: 5%;
   background: #fff;
-  padding: 0 5vw;
-  margin: 0 auto;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
+.popup-header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-close-btn {
+  object-fit: scale-down;
+  width: 10%;
+  height: 5%;
+}
+
 .popup-header {
   color: #1a2236;
+  width: 60%;
   font-weight: 700;
   font-size: 1.8em;
   line-height: 1em;
 }
 
 .project-scroll-container {
-  height: 50%;
   width: 90%;
-  padding: 0;
+  height: 40%;
   margin-top: 5vh;
 }
 
 .thumbnail-scroll {
-  height: 20%;
+  height: 15%;
   width: 90%;
-  padding: 0;
   display: grid;
   column-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -288,102 +304,8 @@ body {
   margin: 0 1vh;
 }
 
-.desktop-modal {
-  position: fixed;
-  font-family: Poppins, sans-serif;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background: #1a2236;
-  margin: 0 auto;
-}
-
-.popup-desktop {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  right: 5%;
-  bottom: 5%;
-  z-index: 2;
-  width: 85%;
-  padding-left: 5%;
-  background: #fff;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.dt-pop-header {
-  font-size: 3.2em;
-  line-height: 2em;
-}
-
-.dt-pop-descr {
-  max-width: 70%;
-  font-size: 1.1em;
-  line-height: 1.9em;
-  text-align: left;
-  padding: 0 10vw;
-  margin: 0 auto;
-  margin-top: 5vh;
-}
-
-.dt-btn-cntnr {
-  padding: 5vh 10vw;
-  height: 10%;
-  flex-direction: row;
-  justify-content: left;
-  margin: 0 auto;
-  max-width: 70%;
-}
-
-.dt-live-button {
-  margin-right: 4vw;
-  width: 40%;
-}
-
-.dt-src-button {
-  width: 40%;
-}
-
 .proj-nav {
-  height: 10%;
-  max-width: 70%;
-  margin: 5vh auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.proj-nav-left {
-  text-align: center;
-  border: none;
-  width: 40%;
-  background: url("../res-icons/ic_arrow_left.svg") 0 0 no-repeat;
-  background-size: contain;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  color: #1a2236;
-}
-
-.proj-nav-left:hover {
-  cursor: pointer;
-}
-
-.proj-nav-right {
-  text-align: center;
-  border: none;
-  width: 40%;
-  background: url("../res-icons/ic_arrow_right-6.svg") 90% 0 no-repeat;
-  background-size: contain;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  color: #1a2236;
-}
-
-.proj-nav-right:hover {
-  cursor: pointer;
+  display: none;
 }
 
 .button-project {
@@ -692,6 +614,108 @@ body {
 
   .button-project {
     border: solid 2px #fff;
+  }
+
+  /* styling for popup */
+  .popup-modal {
+    position: fixed;
+    font-family: Poppins, sans-serif;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #1a2236;
+    margin: 0 auto;
+  }
+
+  .popup-container {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    z-index: 2;
+    width: 80%;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .popup-header {
+    font-size: 3.2em;
+    line-height: 2em;
+  }
+
+  .project-scroll-container {
+    height: 60%;
+    margin-top: 5vh;
+  }
+
+  .popup-description {
+    width: 70%;
+    font-size: 1.1em;
+    line-height: 1.9em;
+    text-align: left;
+    padding: 0 10vw;
+    margin-top: 5vh;
+  }
+
+  .pop-btn-contnr {
+    padding: 0 10vw;
+    height: 10%;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .live-button {
+    margin-right: 4vw;
+    width: 40%;
+  }
+
+  .src-button {
+    width: 40%;
+  }
+
+  .proj-nav {
+    height: 10%;
+    max-width: 70%;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .proj-nav-left {
+    text-align: center;
+    border: none;
+    width: 40%;
+    background: url("../res-icons/ic_arrow_left.svg") 0 0 no-repeat;
+    background-size: contain;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #1a2236;
+  }
+
+  .proj-nav-left:hover {
+    cursor: pointer;
+  }
+
+  .proj-nav-right {
+    text-align: center;
+    border: none;
+    width: 40%;
+    background: url("../res-icons/ic_arrow_right-6.svg") 90% 0 no-repeat;
+    background-size: contain;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #1a2236;
+  }
+
+  .proj-nav-right:hover {
+    cursor: pointer;
   }
 
   /* styling for about-me section -ram */
