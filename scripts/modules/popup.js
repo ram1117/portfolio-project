@@ -1,5 +1,8 @@
+let projectThumbnails = [];
+projectArray.forEach(project => {
+  projectThumbnails.push(project.image);
+});
 function createMobilePopup() {
-
   let popup = document.createElement('div');
   popup.classList.add('popup-container');
   let closeIcon = document.createElement('img');
@@ -22,6 +25,8 @@ function createMobilePopup() {
   newDiv.appendChild(leftButton);
   newDiv.appendChild(rightButton);
 
+  let thumbnailScroll = document.createElement('div');
+  thumbnailScroll.classList.add('thumbnail-scroll');
   let newPar = document.createElement('p');
   newPar.classList.add('popup-description');
 
@@ -30,10 +35,10 @@ function createMobilePopup() {
   let btn1 = document.createElement('a');
   btn1.classList.add('popup-button', 'live-button');
   btn1.textContent = 'See Live';
-  btn1.target='_blank';
+  btn1.target = '_blank';
   let btn2 = document.createElement('a');
   btn2.classList.add('popup-button', 'src-button');
-  btn2.target='_blank';
+  btn2.target = '_blank';
   btn2.textContent = 'See Source';
   popBtnCntnr.appendChild(btn1);
   popBtnCntnr.appendChild(btn2);
@@ -42,6 +47,7 @@ function createMobilePopup() {
   popup.appendChild(header);
   popup.appendChild(techContainer);
   popup.appendChild(newDiv);
+  popup.appendChild(thumbnailScroll);
   popup.appendChild(newPar);
   popup.appendChild(popBtnCntnr);
 
@@ -100,6 +106,7 @@ function loadNewProj(projectObj) {
   let pheader = document.querySelector('.popup-header');
   let ptechCntnr = document.querySelector('.pop-tech-cntnr');
   let pscrollCntnr = document.querySelector('.project-scroll-container');
+  let thmbScroll = document.querySelector('.thumbnail-scroll');
   let lButton = document.querySelector('.left-button');
   let rButton = document.querySelector('.right-button');
   let pdescription = document.querySelector('.popup-description');
@@ -111,6 +118,9 @@ function loadNewProj(projectObj) {
   while (ptechCntnr.firstChild) {
     ptechCntnr.removeChild(ptechCntnr.firstChild);
   }
+  while (thmbScroll.firstChild) {
+    thmbScroll.removeChild(thmbScroll.firstChild);
+  }
   projectObj.technology.forEach(element => {
     let techItem = document.createElement('li');
     techItem.classList.add('pop-tech-item');
@@ -121,6 +131,15 @@ function loadNewProj(projectObj) {
   pscrollCntnr.style.background = `url('${projectObj.image}') 0 0 no-repeat`;
   pscrollCntnr.style.backgroundSize = 'cover';
   let projIndex = projectArray.indexOf(projectObj);
+  let thumbArray = [...projectThumbnails];
+
+  thumbArray.splice(projIndex,4).forEach(img=>{
+    let imgElement = document.createElement('img');
+    imgElement.src=img;
+    imgElement.classList.add('thumb-scroll-img');
+    thmbScroll.appendChild(imgElement);
+  });
+
   if (projIndex == 0) {
     lButton.setAttribute('disabled', '');
   }
@@ -156,12 +175,10 @@ function loadNewProj(projectObj) {
       loadNewProj(projectArray[projIndex - 1]);
       rightNavBtn.removeAttribute('disabled');
     };
-    rightNavBtn.onclick =function(){
+    rightNavBtn.onclick = function () {
       loadNewProj(projectArray[projIndex + 1]);
       leftNavBtn.removeAttribute('disabled');
     }
-
   }
-
 }
 

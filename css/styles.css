@@ -181,6 +181,21 @@ body {
   margin: 5vh 0;
 }
 
+.thumbnail-scroll{
+  height: 20%;
+  width: 90%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2px;
+}
+.thumb-scroll-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .pop-thumbnail {
   width: 90%;
   height: 90%;
@@ -281,8 +296,6 @@ body {
 
 .popup-desktop {
   margin: 0 auto;
-  /* width: 90%; */
-  /* height: 90%; */
 }
 
 .dt-pop-header {
