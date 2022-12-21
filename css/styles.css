@@ -145,8 +145,8 @@ body {
 .tech-item {
   display: inline;
   font-family: Poppins, sans-serif;
-  padding: 1vh 2vh;
-  margin-right: 2vw;
+  padding: 1vh;
+  margin-right: 1vw;
   background: #98dede;
   color: #1a2236;
   font-size: 0.8em;
@@ -281,11 +281,11 @@ body {
 .pop-tech-item {
   border: solid 1px #1a2236;
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 0.8em;
   line-height: 1em;
   text-align: center;
-  padding: 10px;
-  margin: 0 20px;
+  padding: 1vh;
+  margin: 0 1vh;
 }
 
 .desktop-modal {
