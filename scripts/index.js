@@ -353,8 +353,8 @@ function createDesktopLayout() {
 }
 
 function removeProjects(container) {
-  let children = document.querySelectorAll('.project-tile');
-  for (let i = 0; i < children.length; i+=1) {
+  const children = document.querySelectorAll('.project-tile');
+  for (let i = 0; i < children.length; i += 1) {
     container.removeChild(children[i]);
   }
 }
