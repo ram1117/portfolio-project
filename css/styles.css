@@ -390,7 +390,23 @@ body {
 }
 
 .form-textarea {
-  margin-bottom: 5vh;
+  margin-bottom: 5%;
+}
+
+.errmsg-container {
+  font-size: 0.8em;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.error-msg-color {
+  color: #e2505c;
+}
+
+.errmsg-highlight {
+  border: solid 3px #e2505c;
 }
 
 .social-links {
@@ -793,6 +809,15 @@ body {
 
   .button-form-submit {
     width: 50%;
+  }
+
+  .errmsg-container {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
   }
 
   /* styling for footer with social media links -ram */
