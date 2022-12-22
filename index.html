@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  
+
   <div class="main-container">
     <header class="nav-header">
       <!-- logo image added in the background using css -->
@@ -50,9 +50,9 @@
       <h2 class="section-header">Projects</h2>
       <div class="projects-container">
         <div class="project-image-dot"></div>
-        <div class="project-image-art-1"></div>        
+        <div class="project-image-art-1"></div>
         <div class="project-image-art-2"></div>
-        <div class="project-image-art-3"></div>        
+        <div class="project-image-art-3"></div>
       </div>
     </section>
     <!-- About me section -->
@@ -120,23 +120,23 @@
         </header>
         <!-- visitor cotact form -->
         <form class="visitor-form" action="https://formspree.io/f/mvoyeabj" method="post">
-          <div class="form-item float-left">
-            <label for="form-name">Your name</label>
-            <input class="form-item-input form-item-name" id="form-name" type="text" name="name" placeholder="Your name"
-              required maxlength="30" />
-          </div>
-          <div class="form-item float-right">
-            <label for="form-email">Your email</label>
-            <input class="form-item-input form-item-email" id="form-email" type="email" name="email"
-              placeholder="Your email" required />
-          </div>
-          <div class="form-item">
-            <label for="form-message">Message</label>
-            <textarea class="form-item-input form-textarea" id="form-message" name="message" rows="5"
-              placeholder="Enter your message here..." required maxlength="300"></textarea>
-          </div>
-
-          <button class="button-generic button-form-submit" type="submit">Start collaboration</button>
+        <div class="form-item float-left">
+          <label for="form-name">Your name</label>
+          <input class="form-item-input form-item-name" id="form-name" type="text" name="name" placeholder="Your name"
+            required maxlength="30" />
+        </div>
+        <div class="form-item float-right">
+          <label for="form-email">Your email</label>
+          <input class="form-item-input form-item-email" id="form-email" type="email" name="email"
+            placeholder="Your email" required />
+        </div>
+        <div class="form-item">
+          <label for="form-message">Message</label>
+          <textarea class="form-item-input form-textarea" id="form-message" name="message" rows="5"
+            placeholder="Enter your message here..." required maxlength="300"></textarea>
+        </div>
+        <small class="errmsg-container" aria-live="polite"></small>
+        <button class="button-generic button-form-submit" type="submit">Start collaboration</button>
         </form>
       </div>
 
@@ -170,6 +170,7 @@
     </footer>
   </div>
   <script src="scripts/index.js"></script>
+  <script src="scripts/validity.js"></script>
 </body>
 
 </html>

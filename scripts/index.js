@@ -353,11 +353,9 @@ function createDesktopLayout() {
 }
 
 function removeProjects(container) {
-  const { children } = container;
-  for (let i = 0; i < children.length; i += 1) {
-    if (children[i].hasAttribute === 'id') {
-      container.removeChild(children[i]);
-    }
+  let children = document.querySelectorAll('.project-tile');
+  for (let i = 0; i < children.length; i+=1) {
+    container.removeChild(children[i]);
   }
 }
 
@@ -368,11 +366,7 @@ function createLayout() {
 
 createLayout();
 
-window.onresize = createLayout();
-
 window.onresize = function () {
-  if (window.innerWidth > 768) {
-    removeProjects(projectsContainer);
-    createDesktopLayout();
-  }
+  removeProjects(projectsContainer);
+  createLayout();
 };
