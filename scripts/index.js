@@ -140,7 +140,7 @@ function loadNewProj(projectObj) {
     ptechCntnr.appendChild(techItem);
   });
 
-  pscrollCntnr.style.background = `url('${projectObj.image}') 0 0 no-repeat`;
+  pscrollCntnr.style.background = `url('${projectObj.image1}') 0 0 no-repeat`;
   pscrollCntnr.style.backgroundSize = 'cover';
   const projIndex = projectArray.indexOf(projectObj);
   const thumbArray = [...projectThumbnails];

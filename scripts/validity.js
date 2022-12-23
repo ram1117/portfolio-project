@@ -14,7 +14,7 @@ function showMessage(message, isvalid) {
     emailInput.classList.remove('errmsg-highlight');
   } else {
     errorField.textContent = message;
-    errorField.classList.add('error-msg-color');
+    errorField.classList.add('error-msg-');
     emailInput.classList.add('errmsg-highlight');
   }
 }
