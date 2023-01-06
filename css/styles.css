@@ -114,7 +114,8 @@ body {
 .project-tile {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  position: relative;
+  /* justify-content: stretch; */
 }
 
 .project-thumbnail {
@@ -443,10 +444,7 @@ body {
   justify-content: space-between;
 }
 
-.project-details-hover {
-  position: absolute;
-  width: 40%;
-}
+
 
 @media screen and (min-width: 768px) {
   /* styling for navigation bar elements -ram */
@@ -623,6 +621,14 @@ body {
 
   .project-details {
     display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .project-details-hover {
+    
   }
 
   .button-project {
