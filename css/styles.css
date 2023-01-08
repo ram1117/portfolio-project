@@ -115,6 +115,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+
   /* justify-content: stretch; */
 }
 
@@ -444,8 +445,6 @@ body {
   justify-content: space-between;
 }
 
-
-
 @media screen and (min-width: 768px) {
   /* styling for navigation bar elements -ram */
   .nav-bar {
@@ -628,7 +627,7 @@ body {
   }
 
   .project-details-hover {
-    
+
   }
 
   .button-project {
