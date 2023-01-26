@@ -114,7 +114,9 @@ body {
 .project-tile {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  position: relative;
+
+  /* justify-content: stretch; */
 }
 
 .project-thumbnail {
@@ -199,7 +201,6 @@ body {
 }
 
 .thumbnail-scroll {
-  height: 15%;
   display: grid;
   column-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -208,7 +209,7 @@ body {
 
 .thumb-scroll-img {
   width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover;
 }
 
@@ -443,11 +444,6 @@ body {
   justify-content: space-between;
 }
 
-.project-details-hover {
-  position: absolute;
-  width: 40%;
-}
-
 @media screen and (min-width: 768px) {
   /* styling for navigation bar elements -ram */
   .nav-bar {
@@ -623,6 +619,10 @@ body {
 
   .project-details {
     display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .button-project {
@@ -663,8 +663,7 @@ body {
 
   .project-scroll-container {
     width: 100%;
-    height: 60%;
-    margin-top: 5vh;
+    height: 100%;
   }
 
   .popup-description {
@@ -673,7 +672,7 @@ body {
     text-align: left;
     font-size: 1.1em;
     line-height: 1.9em;
-    margin-top: 5vh;
+    margin-top: 7%;
   }
 
   .pop-btn-contnr {

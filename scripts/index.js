@@ -44,13 +44,13 @@ navListItem.forEach((listItem) => {
 
 // projects object sets
 const project1 = {
-  name: 'Project 1',
-  image: 'res-images/Rectangle 21.png',
-  imageAlt: 'Open lap top top view',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
-  livedemo: 'https://ram1117.github.io',
-  source: 'https://github.com',
+  name: 'Film Festival',
+  image: 'res-images/Screenshot_filmfestival.png',
+  imageAlt: 'screenshot of fimlfestival project home page',
+  description: 'The film festival webpage is a landing page for an imaginary film festival. It was developed with a mobile-first approach. The project uses basic web page design with user interactions implemented in Javascript. A Main page and an About page have been implemented. It is my first capstone project at Microverse. A live demo version is hosted on GitHub pages',
+  technology: ['HTML/CSS', 'Javascript'],
+  livedemo: 'https://ram1117.github.io/filmfestival/',
+  source: 'https://github.com/ram1117/capstone-project-1-filmfestival',
   projectno: 1,
 };
 const project2 = {
