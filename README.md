@@ -56,11 +56,11 @@ The project is built using HTML5 and CSS, using Microverse portfolio 5 design te
 
 A live version of the web page is hosted on Github Pages. It can be accessed using the below link
 
-- [https://ram1117.github.io/]
+- [live demo](https://ram1117.github.io/portfolio-project/)
 
 A short presentation of this project is hosted on Loom and can be accessed with the below link
 
-- [https://www.loom.com/share/983ef270f1b04063860a6dda8c9d9b07]
+- [loom presentation video](https://www.loom.com/share/983ef270f1b04063860a6dda8c9d9b07)
 
 
 
