@@ -47,7 +47,7 @@ const project1 = {
   name: 'Film Festival',
   image: 'res-images/Screenshot_filmfestival.png',
   imageAlt: 'screenshot of fimlfestival project home page',
-  description: `The film festival webpage is a landing page for an imaginary film festival. It was developed with a mobile-first approach. The project uses basic web page design with user interactions implemented in Javascript. A Main page and an About page have been implemented. It is my first capstone project at Microverse. A live demo version is hosted on GitHub pages`,
+  description: 'The film festival webpage is a landing page for an imaginary film festival. It was developed with a mobile-first approach. The project uses basic web page design with user interactions implemented in Javascript. A Main page and an About page have been implemented. It is my first capstone project at Microverse. A live demo version is hosted on GitHub pages',
   technology: ['HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io/filmfestival/',
   source: 'https://github.com/ram1117/capstone-project-1-filmfestival',
