@@ -200,10 +200,10 @@ body {
   position: relative;
 }
 
-.popup-project-screenshot{
+.popup-project-screenshot {
   object-fit: contain;
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 .thumbnail-scroll {
@@ -219,7 +219,7 @@ body {
   object-fit: cover;
 }
 
-.thumb-scroll-img:hover{
+.thumb-scroll-img:hover {
   cursor: pointer;
 }
 
@@ -260,7 +260,8 @@ body {
   cursor: pointer;
 }
 
-.left-button,.right-button{
+.left-button,
+.right-button {
   position: absolute;
   height: 15%;
   width: 2%;
@@ -679,7 +680,7 @@ body {
     height: 100%;
   }
 
-  .popup-project-screenshot{
+  .popup-project-screenshot {
     object-fit: cover;
   }
 

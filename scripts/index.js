@@ -47,11 +47,11 @@ const project1 = {
   name: 'Film Festival',
   image: 'res-images/project1/Screenshot- Filmfestival-1.png',
   imageAlt: 'screenshot of fimlfestival project home page',
-  screenshots:[
-'res-images/project1/Screenshot- Filmfestival-1.png',
-'res-images/project1/Screenshot- Filmfestival-2.png',
-'res-images/project1/Screenshot- Filmfestival-3.png',
-'res-images/project1/Screenshot- Filmfestival-4.png',],
+  screenshots: [
+    'res-images/project1/Screenshot- Filmfestival-1.png',
+    'res-images/project1/Screenshot- Filmfestival-2.png',
+    'res-images/project1/Screenshot- Filmfestival-3.png',
+    'res-images/project1/Screenshot- Filmfestival-4.png'],
   description: 'The film festival webpage is a landing page for an imaginary film festival. It was developed with a mobile-first approach. The project uses basic web page design with user interactions implemented in Javascript. A Main page and an About page have been implemented. It is my first capstone project at Microverse. A live demo version is hosted on GitHub pages',
   technology: ['HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io/filmfestival/',
@@ -62,7 +62,7 @@ const project2 = {
   name: 'Project 2',
   image: 'res-images/Rectangle 22.png',
   imageAlt: 'open laptop and a mobile',
-  screenshots:[],
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -73,7 +73,7 @@ const project3 = {
   name: 'Project 3',
   image: 'res-images/Rectangle 26.png',
   imageAlt: 'open laptop tilted to right',
-  screenshots:[],
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -84,7 +84,7 @@ const project4 = {
   name: 'Project 4',
   image: 'res-images/Rectangle 27.png',
   imageAlt: 'open laptop front view',
-  screenshots:[],
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -95,7 +95,7 @@ const project5 = {
   name: 'Project 5',
   image: 'res-images/Rectangle 46.png',
   imageAlt: 'open laptop front view 2',
-  screenshots:[],
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -106,7 +106,7 @@ const project6 = {
   name: 'Project 6',
   image: 'res-images/Rectangle 47.png',
   imageAlt: 'open laptop left side view',
-  screenshots:[],
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -160,7 +160,7 @@ function loadNewProj(projectObj) {
     imgElement.classList.add('thumb-scroll-img');
     imgElement.onclick = () => {
       projectScreenshot.src = img;
-    }
+    };
 
     thmbScroll.appendChild(imgElement);
   });
@@ -234,7 +234,7 @@ function createPopupWindow() {
   techContainer.classList.add('pop-tech-cntnr');
   const newDiv = document.createElement('div');
   newDiv.classList.add('project-scroll-container');
-  
+
   const projectScreenshot = document.createElement('img');
   projectScreenshot.classList.add('popup-project-screenshot');
 
@@ -243,7 +243,6 @@ function createPopupWindow() {
   leftButton.src = '../res-icons/left-arrow.svg';
   const rightButton = document.createElement('button');
   rightButton.classList.add('right-button');
-  
 
   newDiv.appendChild(leftButton);
   newDiv.appendChild(projectScreenshot);
