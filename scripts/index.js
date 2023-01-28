@@ -45,8 +45,13 @@ navListItem.forEach((listItem) => {
 // projects object sets
 const project1 = {
   name: 'Film Festival',
-  image: 'res-images/Screenshot_filmfestival.png',
+  image: 'res-images/project1/Screenshot- Filmfestival-1.png',
   imageAlt: 'screenshot of fimlfestival project home page',
+  screenshots: [
+    'res-images/project1/Screenshot- Filmfestival-1.png',
+    'res-images/project1/Screenshot- Filmfestival-2.png',
+    'res-images/project1/Screenshot- Filmfestival-3.png',
+    'res-images/project1/Screenshot- Filmfestival-4.png'],
   description: 'The film festival webpage is a landing page for an imaginary film festival. It was developed with a mobile-first approach. The project uses basic web page design with user interactions implemented in Javascript. A Main page and an About page have been implemented. It is my first capstone project at Microverse. A live demo version is hosted on GitHub pages',
   technology: ['HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io/filmfestival/',
@@ -57,6 +62,7 @@ const project2 = {
   name: 'Project 2',
   image: 'res-images/Rectangle 22.png',
   imageAlt: 'open laptop and a mobile',
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -67,6 +73,7 @@ const project3 = {
   name: 'Project 3',
   image: 'res-images/Rectangle 26.png',
   imageAlt: 'open laptop tilted to right',
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -77,6 +84,7 @@ const project4 = {
   name: 'Project 4',
   image: 'res-images/Rectangle 27.png',
   imageAlt: 'open laptop front view',
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -87,6 +95,7 @@ const project5 = {
   name: 'Project 5',
   image: 'res-images/Rectangle 46.png',
   imageAlt: 'open laptop front view 2',
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -97,6 +106,7 @@ const project6 = {
   name: 'Project 6',
   image: 'res-images/Rectangle 47.png',
   imageAlt: 'open laptop left side view',
+  screenshots: [],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   technology: ['Ruby on Rails', 'HTML/CSS', 'Javascript'],
   livedemo: 'https://ram1117.github.io',
@@ -117,7 +127,7 @@ projectArray.forEach((project) => {
 function loadNewProj(projectObj) {
   const pheader = document.querySelector('.popup-header');
   const ptechCntnr = document.querySelector('.pop-tech-cntnr');
-  const pscrollCntnr = document.querySelector('.project-scroll-container');
+  const projectScreenshot = document.querySelector('.popup-project-screenshot');
   const thmbScroll = document.querySelector('.thumbnail-scroll');
   const lButton = document.querySelector('.left-button');
   const rButton = document.querySelector('.right-button');
@@ -140,19 +150,20 @@ function loadNewProj(projectObj) {
     ptechCntnr.appendChild(techItem);
   });
 
-  pscrollCntnr.style.background = `url('${projectObj.image}') 0 0 no-repeat`;
-  pscrollCntnr.style.backgroundSize = 'cover';
-  const projIndex = projectArray.indexOf(projectObj);
-  const thumbArray = [...projectThumbnails];
+  projectScreenshot.src = projectObj.image;
 
-  thumbArray.splice(projIndex, 4).forEach((img) => {
+  const projIndex = projectArray.indexOf(projectObj);
+
+  projectObj.screenshots.forEach((img) => {
     const imgElement = document.createElement('img');
     imgElement.src = img;
     imgElement.classList.add('thumb-scroll-img');
+    imgElement.onclick = () => {
+      projectScreenshot.src = img;
+    };
+
     thmbScroll.appendChild(imgElement);
   });
-
-  thmbScroll.firstChild.style.border = 'solid 3px #1a2236';
 
   if (projIndex === 0) {
     lButton.setAttribute('disabled', '');
@@ -223,11 +234,18 @@ function createPopupWindow() {
   techContainer.classList.add('pop-tech-cntnr');
   const newDiv = document.createElement('div');
   newDiv.classList.add('project-scroll-container');
+
+  const projectScreenshot = document.createElement('img');
+  projectScreenshot.classList.add('popup-project-screenshot');
+
   const leftButton = document.createElement('button');
   leftButton.classList.add('left-button');
+  leftButton.src = '../res-icons/left-arrow.svg';
   const rightButton = document.createElement('button');
   rightButton.classList.add('right-button');
+
   newDiv.appendChild(leftButton);
+  newDiv.appendChild(projectScreenshot);
   newDiv.appendChild(rightButton);
 
   const thumbnailScroll = document.createElement('div');
